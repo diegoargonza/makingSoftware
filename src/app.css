@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+h1{
+    @apply text-orange-600 text-3xl;
+}
+h2{
+    @apply  text-blue-800 ;
+}
+li{
+    @apply  text-blue-950;
+}
+
+.wrapper{
+    @apply w-[1000px]  m-auto ;
+}

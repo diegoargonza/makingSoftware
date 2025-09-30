@@ -1,0 +1,1 @@
+<h1 class="bg-amber-100">Hola Mundo</h1>
