@@ -32,7 +32,7 @@
 </nav>
 
 <!-- Contenido -->
-<main class="bg-[url(./img/fondo-making.jpg),_url(./img/logoUNAM.jpg)] bg-[left_center,_right_center]  bg-no-repeat bg-contain">
+<main class="bg-[url(./img/fondo-making.jpg),url(./img/logoUNAM.jpg)]  object-contain ">
  
 <div class="flex space-x-5 justify-center items-center p-20">
     <img src="" alt="" class="border rounded-full p-2 w-50 h-50">
