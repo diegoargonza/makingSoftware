@@ -30,7 +30,7 @@
 
 <!-- Navegación -->
 
-<nav class="bg-[url(./img/fondo-making.jpg)] ">
+<nav class="bg-[url(./img/fondo-making.jpg)] mask-x-from-70% mask-x-to-90% ">
     <ul class="flex space-x-10 justify-center">
         <li>Inicio</li>
         <li>Acerca del programa</li>
@@ -50,7 +50,7 @@
    <div class="flex space-x-5 justify-center items-center p-20 bg-[url(./img/fondo-making.jpg)]">
        <img src={imgPrueba} alt="" class="rounded-full  w-50 h-50">
        <div class=" w-[600px]">
-           <p class="text-xl">Si eres egresada o egresado de la UNAM, te invitamos a crear soluciones tecnológicas para nuestra universidad con las prácticas más utilizadas en el sector</p>
+           <p class="text-xl text-sky-950">Si eres egresada o egresado de la UNAM, te invitamos a crear soluciones tecnológicas para nuestra universidad con las prácticas más utilizadas en el sector</p>
            <div class="mt-5 text-center">
                <a href=" " class="border border-gray-200  shadow-md rounded-md text-orange-700 p-2">Ver Convocatoria</a>
            </div>
