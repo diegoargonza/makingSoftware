@@ -13,7 +13,7 @@ const config = {
 			fallback: null,
 		}),
 		paths:{
-			base: '',
+			base: '/MAKING25',
 		},
 		prerender: {
 			entries: ['*']
