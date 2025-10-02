@@ -1,8 +1,8 @@
 <script>
     import img_sec1 from '../img/img_secc1.png'
     import Tarjeta from '../components/tarjeta.svelte';
-    import img1 from '../img/img1.png'
     import img2 from '../img/img2.png'
+    import img1 from '../img/img1.png'
     import img3 from '../img/img3.png'
     import img4 from '../img/img4.png'
   
@@ -29,7 +29,7 @@
 <!-- Contenido de tarjetas | sección 2 -->
 <div class="relative flex h-[500px]">
     <div class="bg-[url(./img/bg_secc2.png)] w-1/2 h-full bg-cover"></div>
-    <div class="bg-[url(./img/bg_secc2.png)] w-1/2 h-full bg-cover"></div>
+    <div class="bg-[url(./img/bg_secc2.png)] w-1/2 h-[500px]  bg-cover bg-right "></div>
     
     <div class="absolute inset-0 flex items-center justify-center space-x-5">
         <Tarjeta
@@ -59,7 +59,7 @@
 
 <div class="relative flex">
     <div class="bg-[url(./img/bg_secc3.png)]  w-1/2 h-[500px] bg-cover "></div>
-    <div class="bg-[url(./img/bg_secc3.png)]  w-1/2 h-[500px]  bg-cover object-right "></div>
+    <div class="bg-[url(./img/bg_secc3.png)]  w-1/2 h-[500px]  bg-cover bg-right "></div>
     <div class="absolute inset-0 items-center justify-center  ">
         <div class="w-[1000px] mx-auto">
             <h1 class="mt-10 ">Acerca del programa Institucional de Desarrollo  de Software y Soluciones Técnicas </h1>
