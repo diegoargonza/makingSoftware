@@ -1,8 +1,8 @@
 <script>
 	import favicon from '$lib/assets/favicon.svg';
 	import "../app.css";
-	import Header from '../components/header.svelte';
-    import Navegacion from '../components/navegacion.svelte'
+	import Navegacion from '$lib/components/navegacion.svelte';
+	import Header from '$lib/components/header.svelte';
 	let { children } = $props();
 </script>
 
