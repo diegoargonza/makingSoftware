@@ -17,7 +17,8 @@ const config = {
 			entries: [
 				'/',
 				'/convocatoria',
-			  ]
+			  ],
+			  handleMissingId: 'warn'
 		
 		}
 		  

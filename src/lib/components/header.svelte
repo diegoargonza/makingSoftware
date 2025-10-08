@@ -5,7 +5,7 @@
 </script>
 
 <header class="relative flex ">
-    <div class="bg-[url(./img/bg_head.png)]   w-full bg-cover p-10"></div> 
+    <div class="bg-[url(/img/bg_head.png)]   w-full bg-cover p-10"></div> 
     <div class="absolute inset-0 flex items-center justify-between ">
         <div class="flex space-x-3 items-center">
         <img src="{base}/img/logoUNAM.png" alt="logo-unam" class="h-10 w-30">

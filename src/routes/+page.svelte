@@ -31,8 +31,8 @@
 
 <!-- Contenido de tarjetas | sección 2 -->
 <div class="relative flex h-[500px]">
-    <div class="bg-[url(./img/bg_secc2.png)] w-1/2 h-full bg-cover"></div>
-    <div class="bg-[url(./img/bg_secc2.png)] w-1/2 h-[500px]  bg-cover bg-right "></div>
+    <div class="bg-[url(/img/bg_secc2.png)] w-1/2 h-full bg-cover"></div>
+    <div class="bg-[url(/img/bg_secc2.png)] w-1/2 h-[500px]  bg-cover bg-right "></div>
     
     <div class="absolute inset-0 flex items-center justify-center space-x-5">
         <Tarjeta
@@ -61,11 +61,11 @@
 <!-- Contenido objetivos | sección 3 -->
 
 <div class="relative flex">
-    <div class="bg-[url(./img/bg_secc3.png)]  w-1/2 h-[500px] bg-cover "></div>
-    <div class="bg-[url(./img/bg_secc3.png)]  w-1/2 h-[500px]  bg-cover bg-right "></div>
+    <div class="bg-[url(/img/bg_secc3.png)]  w-1/2 h-[500px] bg-cover "></div>
+    <div class="bg-[url(/img/bg_secc3.png)]  w-1/2 h-[500px]  bg-cover bg-right "></div>
     <div class="absolute inset-0 items-center justify-center  ">
         <div class="w-[1000px] mx-auto">
-            <h1 class="mt-10 " id='acerca'>Acerca del programa Institucional de Desarrollo  de Software y Soluciones Técnicas </h1>
+            <h1 class="mt-10 " id="acerca">Acerca del programa Institucional de Desarrollo  de Software y Soluciones Técnicas </h1>
             <div class="flex items-center space-x-5 ">
                 <div>
                     <h2 class="text-xl">Objetivos del programa </h2>
