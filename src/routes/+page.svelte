@@ -7,11 +7,14 @@
     // import img3 from './img/img3.png';
     // import img4 from './img/img4.png';
 
+    
+
 </script>
 
 
 
 
+<main class="">
 
 <!-- Contenido || sección 1-->
 
@@ -79,5 +82,7 @@
 
 <h1 class='w-[1000px] mx-auto' id='beneficios'>Beneficios</h1>
 <p class='p-20'></p>
-<h1 class='w-[1000px] mx-auto mt-100' id='informes'>Informes</h1>
+<h1 class='w-[1000px] mx-auto py-[500px]' id='informes'>Informes</h1>
 <p class=''></p>
+
+</main>

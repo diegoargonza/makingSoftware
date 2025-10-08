@@ -10,10 +10,13 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 <!-- Header-->
-<Header/>    
 
-<!-- Navegación -->
 
-<Navegacion/>
+	<Header/>    
+	
+	<!-- Navegación -->
+	
+	<Navegacion/>
+	
+	{@render children?.()}
 
-{@render children?.()}
