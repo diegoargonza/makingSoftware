@@ -32,7 +32,7 @@
 <!-- Contenido de tarjetas | sección 2 -->
 <div class="relative flex h-[500px]">
     <div class="bg-[url(/img/bg_secc2.png)] w-1/2 h-full bg-cover"></div>
-    <div class="bg-[url(/img/bg_secc2.png)] w-1/2 h-[500px]  bg-cover bg-right "></div>
+    <div class="bg-[url(/img/bg_secc2.png)] w-1/2 h-[500px]   bg-cover bg-right "></div>
     
     <div class="absolute inset-0 flex items-center justify-center space-x-5">
         <Tarjeta
