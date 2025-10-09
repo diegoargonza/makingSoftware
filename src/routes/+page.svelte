@@ -1,88 +1,125 @@
 <script>
-    import {base} from '$app/paths';
-    // import img_sec1 from './img/img_secc1.png';
-     import Tarjeta from '$lib/components/tarjeta.svelte';
-    // import img2 from './img/img2.png';
-    // import img1 from './img/img1.png';
-    // import img3 from './img/img3.png';
-    // import img4 from './img/img4.png';
-
-    
-
+    import { base } from "$app/paths";
+    import Tarjeta from "$lib/components/tarjeta.svelte";
 </script>
 
 
+    <!-- Contenido || sección 1-->
 
-
-<main class="">
-
-<!-- Contenido || sección 1-->
-
-   <div class="flex space-x-5 justify-center items-center p-20 bg-sepia-100">
-       <img src="{base}/img/img_secc1.png" alt="" class="rounded-full  w-50 h-50">
-       <div class=" w-[600px]">
-           <p class="text-xl text-sky-950">Si eres egresada o egresado de la UNAM, te invitamos a crear soluciones tecnológicas para nuestra universidad con las prácticas más utilizadas en el sector</p>
-           <div class="mt-5 text-center">
-               <a href=" " class="border border-gray-200  shadow-md rounded-md text-orange-700 p-2">Ver Convocatoria</a>
-           </div>
-       </div>
-   </div>
-
-
-<!-- Contenido de tarjetas | sección 2 -->
-<div class="relative flex h-[500px]">
-    <div class="bg-[url(/img/bg_secc2.png)] w-1/2 h-full bg-cover"></div>
-    <div class="bg-[url(/img/bg_secc2.png)] w-1/2 h-[500px]   bg-cover bg-right "></div>
-    
-    <div class="absolute inset-0 flex items-center justify-center space-x-5">
-        <Tarjeta
-            titulo={'Capacitación práctica'}
-            texto={'Aprende a desarrollar sistemas con enfoque ágil, ¡listo para la industria!'}
-            img="{base}/img/img1.png"
-        />
-        <Tarjeta
-            titulo={'Experiencia Real'}
-            texto={'Colabora en proyectos multidiciplinarios que impactan directamente a la comunidad universitaria'}
-            img="{base}/img/img2.png"
-        />
-        <Tarjeta
-            titulo={'Retribución económica'}
-            texto={'Gana mientras adquieres nuevas habilidades y creas soluciones tecnológicas de calidad'}
-            img="{base}/img/img3.png"
-        />
-        <Tarjeta
-            titulo={'Crecimiento profesional'}
-            texto={'Fortalece tus competencias trabajando en equipos, resolviendo desafíos reales y atumatizando procesos clave'}
-            img="{base}/img/img4.png"
-        />
-    </div>
-</div>
-
-<!-- Contenido objetivos | sección 3 -->
-
-<div class="relative flex">
-    <div class="bg-[url(/img/bg_secc3.png)]  w-1/2 h-[500px] bg-cover "></div>
-    <div class="bg-[url(/img/bg_secc3.png)]  w-1/2 h-[500px]  bg-cover bg-right "></div>
-    <div class="absolute inset-0 items-center justify-center  ">
-        <div class="w-[1000px] mx-auto">
-            <h1 class="mt-10 " id="acerca">Acerca del programa Institucional de Desarrollo  de Software y Soluciones Técnicas </h1>
-            <div class="flex items-center space-x-5 ">
-                <div>
-                    <h2 class="text-xl">Objetivos del programa </h2>
-                    <p>Generar un programa de desarrollo de software y soluciones tecnológicas que ayude en la automatización de procesos institucionales universitarios con la aplicación de métodos formales de ingeniería de software, que contemplan la evaluación de laternativas como la adaptación, adquisición o desarrollo da la medida, con la participación de grupos de trabajo integrados por personal especialista y perfiles de egresados en formación, capacitados en prácticas formales adecuadas por la universidad para la construcción de software.</p>
+    <div
+        class="flex flex-wrap space-x-5 justify-center items-center bg-sepia-100 h-[500px] md:h-[400px]"
+    >
+        <div>
+            <div class="">
+                <div
+                    class="shadow-[-2px_-2px_3px_#fff,2px_2px_3px_#ccc] bg-rose-50/30 h-52 w-52 rounded-full"
+                >
+                    <img
+                        src="{base}/img/img_secc1.png"
+                        alt=""
+                        class="rounded-full w-full h-full"
+                    />
                 </div>
-               <img src='{base}/img/img1.png' alt="" class="rounded-full  w-50 h-50">
+            </div>
+        </div>
+
+        <div class="w-11/12 md:w-[600px]">
+            <p class="text-justify md:text-xl text-sky-950">
+                Si eres egresada o egresado de la UNAM, te invitamos a crear
+                soluciones tecnológicas para nuestra universidad con las
+                prácticas más utilizadas en el sector.
+            </p>
+            <div class="flex justify-center mt-3 md:mt-2">
+                <div
+                    class="grid place-content-center shadow-[-2px_-2px_3px_#fff,2px_2px_3px_#ccc] bg-rose-50/30 h-10 w-40 rounded-xl"
+                >
+                    <a href=" " class="text-center text-orange-700"
+                        >Ver convocatoria</a
+                    >
+                </div>
             </div>
         </div>
     </div>
-</div>
 
+    <!-- Contenido de tarjetas | sección 2 -->
+    <div
+        class="p-2"
+        style="background-image: url({base}/img/bg_secc2_der.png), url({base}/img/bg_secc2_izq.png); background-position: right, left; background-repeat: no-repeat, no-repeat;"
+    >
+        <div class="flex flex-wrap space-x-5 justify-center">
+            <div
+                class="flex flex-wrap justify-center gap-3 md:w-[700px] lg:w-[1200px]"
+            >
+                <Tarjeta
+                    titulo={"Capacitación práctica"}
+                    texto={"Aprende a desarrollar sistemas con enfoque ágil, ¡listo para la industria!"}
+                    img="{base}/img/img1.png"
+                />
+                <Tarjeta
+                    titulo={"Experiencia Real"}
+                    texto={"Colabora en proyectos multidiciplinarios que impactan directamente a la comunidad universitaria"}
+                    img="{base}/img/img2.png"
+                />
+                <Tarjeta
+                    titulo={"Retribución económica"}
+                    texto={"Gana mientras adquieres nuevas habilidades y creas soluciones tecnológicas de calidad"}
+                    img="{base}/img/img3.png"
+                />
+                <Tarjeta
+                    titulo={"Crecimiento profesional"}
+                    texto={"Fortalece tus competencias trabajando en equipos, resolviendo desafíos reales y atumatizando procesos clave"}
+                    img="{base}/img/img4.png"
+                />
+            </div>
+        </div>
+    </div>
 
-<!-- Beneficios | sección 4 -->
+    <!-- Contenido objetivos | sección 3 -->
+    <div
+        style="background-image: url({base}/img/bg_secc3_der.png), url({base}/img/bg_secc3_izq.png); background-position: right, left;
+    background-repeat: no-repeat, no-repeat;" class="grid justify-center "
+    >
+        <div class="">
+            <h1 id="acerca" class=" text-justify w-11/12 px-2">
+                Acerca del programa Institucional de Desarrollo de Software y
+                Soluciones Técnicas
+            </h1>
+        </div>
+        <div class="flex flex-wrap  items-center ">
+            <div class="mx-auto">
+                <div class="w-11/12 px-2 mt-5">
+                    <h2 class="text-xl">Objetivos del programa</h2>
+                </div>
+                <div>
+                    <p class=" w-11/12 md:w-[700px]  lg:w-[800px] px-2 ">
+                        Generar un programa de desarrollo de software y soluciones
+                        tecnológicas que ayude en la automatización de procesos
+                        institucionales universitarios con la aplicación de métodos
+                        formales de ingeniería de software, que contemplan la
+                        evaluación de laternativas como la adaptación, adquisición o
+                        desarrollo da la medida, con la participación de grupos de
+                        trabajo integrados por personal especialista y perfiles de
+                        egresados en formación, capacitados en prácticas formales
+                        adecuadas por la universidad para la construcción de
+                        software.
+                    </p>
+                </div>
+            </div>
+            <div class="mx-auto mt-5 ">
+                <div class="shadow-[-2px_-2px_3px_#fff,2px_2px_3px_#ccc] bg-rose-50/30 h-52 w-52 rounded-full">
+                    <img
+                        src="{base}/img/img1.png"
+                        alt=""
+                        class="rounded-full w-full h-full"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
 
-<h1 class='w-[1000px] mx-auto' id='beneficios'>Beneficios</h1>
-<p class='p-20'></p>
-<h1 class='w-[1000px] mx-auto py-[500px]' id='informes'>Informes</h1>
-<p class=''></p>
+    <!-- Beneficios | sección 4 -->
 
-</main>
+     <!-- <h1 class="mx-auto" id="beneficios">Beneficios</h1>
+    <p class="p-20"></p>
+    <h1 class=" mx-auto py-[500px]" id="informes">Informes</h1>
+    <p class=""></p> -->

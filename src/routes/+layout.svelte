@@ -11,12 +11,12 @@
 </svelte:head>
 <!-- Header-->
 
+<Header/>    
 
-	<Header/>    
-	
-	<!-- Navegación -->
-	
-	<Navegacion/>
-	
+<!-- Navegación -->
+<Navegacion/>
+<main >
 	{@render children?.()}
+</main>
+	
 
