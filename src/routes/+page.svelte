@@ -43,12 +43,13 @@
 
     <!-- Contenido de tarjetas | sección 2 -->
     <div
-        class="p-2"
-        style="background-image: url({base}/img/bg_secc2_der.png), url({base}/img/bg_secc2_izq.png); background-position: right, left; background-repeat: no-repeat, no-repeat;"
+        class="p-2  "
+        id="seccion2"
+        style=""
     >
         <div class="flex flex-wrap space-x-5 justify-center">
             <div
-                class="flex flex-wrap justify-center gap-3 md:w-[700px] lg:w-[1200px]"
+                class="flex flex-wrap justify-center gap-3 md:w-[700px] lg:w-[1200px] p-20"
             >
                 <Tarjeta
                     titulo={"Capacitación práctica"}
@@ -78,20 +79,21 @@
     <div
         style="background-image: url({base}/img/bg_secc3_der.png), url({base}/img/bg_secc3_izq.png); background-position: right, left;
     background-repeat: no-repeat, no-repeat;" class="grid justify-center "
+    id="seccion3"
     >
         <div class="">
-            <h1 id="acerca" class=" text-justify w-11/12 px-2">
+            <h1 id="acerca" class=" text-justify w-11/12 px-5 md:px-0">
                 Acerca del programa Institucional de Desarrollo de Software y
                 Soluciones Técnicas
             </h1>
         </div>
-        <div class="flex flex-wrap  items-center ">
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-6  ">
             <div class="mx-auto">
-                <div class="w-11/12 px-2 mt-5">
+                <div class="w-11/12 md:w-full mt-5 md:mt-0 px-5 md:px-0">
                     <h2 class="text-xl">Objetivos del programa</h2>
                 </div>
                 <div>
-                    <p class=" w-11/12 md:w-[700px]  lg:w-[800px] px-2 ">
+                    <p class=" w-11/12 md:w-[700px]  lg:w-[800px] mx-auto ">
                         Generar un programa de desarrollo de software y soluciones
                         tecnológicas que ayude en la automatización de procesos
                         institucionales universitarios con la aplicación de métodos

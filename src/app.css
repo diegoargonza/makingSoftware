@@ -33,3 +33,34 @@ html {
 #informes{
     scroll-margin-top: 80px
 }
+
+/* Fondos de cada sección */
+
+#seccion2{
+    background-image: url('/img/bg_secc2_der.png'), url('/img/bg_secc2_izq.png'); 
+    background-position: right, left;
+    background-repeat: no-repeat, no-repeat;
+}
+
+#seccion3{
+    background-image: url('/img/bg_secc3_der.png'), url('/img/bg_secc3_izq.png'); 
+    background-position: right, left;
+    background-repeat: no-repeat, no-repeat;
+
+}
+
+@media(max-width: 1024px){
+
+    #seccion2{
+        background-image: url('/img/bg_secc2_izq.png'); 
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #seccion3{
+        background-image: url('/img/bg_secc3_der.png'); 
+        background-position:  right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

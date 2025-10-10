@@ -4,7 +4,7 @@
 
 <div class="">
     <div>
-        <div class=" bg-gray-100  rounded-t-full rounded-b-xl w-[250px] h-[430px] p-3">
+        <div class=" bg-gray-100 shadow-2xl rounded-t-full rounded-b-xl w-[250px] h-[430px] p-3">
             <div class="shadow-[-2px_-2px_3px_#fff,2px_2px_3px_#ccc] bg-rose-50/30  rounded-full mx-auto">
                 <img src={img} alt="" class="">
             </div>
