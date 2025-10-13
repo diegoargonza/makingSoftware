@@ -21,9 +21,9 @@
     <div class="relative flex h-16 items-center ">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
        
-        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-black focus:outline-2 focus:-outline-offset-1 focus:outline-sky-700">
           <span class="absolute -inset-0.5"></span>
-          <span class="sr-only">Open main menu</span>
+          <span class="sr-only">menu</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
             <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
@@ -32,12 +32,12 @@
           </svg>
         </button>
       </div>
-      <div class="flex  items-center justify-center sm:items-stretch sm:justify-start">
+      <div class="flex flex-1 items-center justify-center">
         <div class="hidden sm:ml-6 sm:block">
-          <div class="flex space-x-5 ">
+          <div class="flex space-x-10 ">
             <a href="{base}" aria-current="page" class="text-sky-700">Inicio</a>
             <a href="#acerca" class="text-sky-700">Acerca del programa</a>
-            <a href="{base}/convocatoria" class="text-sky-700">Convocatoria</a>
+            <a href="https://acortar.link/NkEccB" class="text-sky-700" target="_blank">Convocatoria</a>
             <a href="#beneficios" class="text-sky-700">Beneficios</a>
             <a href="#informes" class="text-sky-700">Informes</a>
           </div>
@@ -50,11 +50,11 @@
   <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
     <div class="space-y-1 px-2 pt-2 pb-3">
      
-      <a href=" " aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Inicio</a>
-      <a href=" " class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:bg-white/5 hover:text-white">Acerca del programa</a>
-      <a href=" " class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:bg-white/5 hover:text-white">Convocatoria</a>
-      <a href=" " class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:bg-white/5 hover:text-white">Beneficios</a>
-      <a href=" " class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:bg-white/5 hover:text-white">Informes</a>
+      <a href="{base}" aria-current="page" class="block rounded-md  px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Inicio</a>
+      <a href="#acerca" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600 ">Acerca del programa</a>
+      <a href="{base}/convocatoria" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Convocatoria</a>
+      <a href="#beneficios" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Beneficios</a>
+      <a href="#informes" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Informes</a>
     </div>
   </el-disclosure>
 </nav>

@@ -33,7 +33,7 @@
                 <div
                     class="grid place-content-center shadow-[-2px_-2px_3px_#fff,2px_2px_3px_#ccc] bg-rose-50/30 h-10 w-40 rounded-xl"
                 >
-                    <a href=" " class="text-center text-orange-700"
+                    <a href="https://acortar.link/NkEccB" class="text-center text-orange-700" target="_blank"
                         >Ver convocatoria</a
                     >
                 </div>
@@ -118,10 +118,3 @@
             </div>
         </div>
     </div>
-
-    <!-- Beneficios | sección 4 -->
-
-     <!-- <h1 class="mx-auto" id="beneficios">Beneficios</h1>
-    <p class="p-20"></p>
-    <h1 class=" mx-auto py-[500px]" id="informes">Informes</h1>
-    <p class=""></p> -->

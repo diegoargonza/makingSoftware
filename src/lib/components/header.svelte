@@ -4,18 +4,20 @@
     // import logoMSoftware from "../../../static/img/logoMSoftware.png";
 </script>
 
+
 <header class="relative flex">
-    <div class="bg-[url(/img/bg_head.png)]   w-full bg-cover p-10"></div> 
-    <div class="absolute inset-0 flex items-center justify-between wrapper">
-        <div class="flex space-x-3 items-center">
-        <img src="{base}/img/logoUNAM.png" alt="logo-unam" class="h-10 w-30">
-            <div>
+    <div class="bg-[url(/img/bg_head.png)] w-full bg-cover p-10"></div> 
+    <div class="absolute inset-0 flex items-center justify-between">
+        <div class="flex space-x-3 items-center order-2 sm:order-1">
+            <img src="{base}/img/logoUNAM.png" alt="logo-unam" class="h-10 w-30 hidden sm:inline text-left text-sm lg:text-xl">
+            <div class="w-[200px] md:w-full hidden sm:block">
                 <p class="text-orange-700">Programa institucional de</p>
                 <p class="text-orange-700">Desarrollo de Software y Soluciones Tecnológicas</p>
             </div>
         </div>
-        <div>
+        <div class="order-1 sm:order-2">
             <img src="{base}/img/logoMSoftware.png" alt="logo-msoftware" class="h-10 w-30">
         </div>
    </div>
 </header>
+
