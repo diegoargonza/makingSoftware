@@ -82,14 +82,14 @@
     id="seccion3"
     >
         <div class="">
-            <h1 id="acerca" class=" text-justify w-11/12 px-5 md:px-0">
+            <h1 id="acerca" class=" text-justify w-11/12 px-5 md:px-0 mx-auto sm:mx-0 ">
                 Acerca del programa Institucional de Desarrollo de Software y
                 Soluciones Técnicas
             </h1>
         </div>
         <div class="flex flex-col lg:flex-row items-center justify-center gap-6  ">
             <div class="mx-auto">
-                <div class="w-11/12 md:w-full mt-5 md:mt-0 px-5 md:px-0">
+                <div class="w-11/12 md:w-full mt-5 md:mt-0 px-5 md:px-0 ">
                     <h2 class="text-xl">Objetivos del programa</h2>
                 </div>
                 <div>
