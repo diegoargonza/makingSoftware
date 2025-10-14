@@ -113,3 +113,20 @@
     </div>
        
     </div>
+
+
+
+    <!-- Contenido objetivos | sección 4 -->
+    <div class="wrapper">
+        <h1 id="beneficios">Beneficios</h1>
+        <div class="p-50">
+
+        </div>
+    </div>
+    <!-- Contenido objetivos | sección 4 -->
+    <div class="wrapper ">
+        <h1 id="informes">Informes</h1>
+        <div class="p-50">
+
+        </div>
+    </div>
