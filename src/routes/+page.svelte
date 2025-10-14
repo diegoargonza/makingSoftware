@@ -64,7 +64,7 @@
                 <Tarjeta
                     titulo={"Retribución económica"}
                     texto={"Gana mientras adquieres nuevas habilidades y creas soluciones tecnológicas de calidad"}
-                    img="{base}/img/img3.png"
+                    img="{base}/img/img3-1.png"
                 />
                 <Tarjeta
                     titulo={"Crecimiento profesional"}
@@ -76,24 +76,18 @@
     </div>
 
     <!-- Contenido objetivos | sección 3 -->
-    <div
-        style="background-image: url({base}/img/bg_secc3_der.png), url({base}/img/bg_secc3_izq.png); background-position: right, left;
-    background-repeat: no-repeat, no-repeat;" class="grid justify-center "
+    <div class="grid justify-center  "
     id="seccion3"
     >
-        <div class="">
-            <h1 id="acerca" class=" text-justify w-11/12 px-5 md:px-0 mx-auto sm:mx-0 ">
+    <div class="wrapper">
+            <h1 id="acerca" class="px-5">
                 Acerca del programa Institucional de Desarrollo de Software y
                 Soluciones Técnicas
             </h1>
-        </div>
-        <div class="flex flex-col lg:flex-row items-center justify-center gap-6  ">
-            <div class="mx-auto">
-                <div class="w-11/12 md:w-full mt-5 md:mt-0 px-5 md:px-0 ">
+            <div class="flex flex-wrap items-center px-5">
+                <div class="w-full md:w-auto lg:w-[800px]" >
                     <h2 class="text-xl">Objetivos del programa</h2>
-                </div>
-                <div>
-                    <p class=" w-11/12 md:w-[700px]  lg:w-[800px] mx-auto ">
+                    <p class="">
                         Generar un programa de desarrollo de software y soluciones
                         tecnológicas que ayude en la automatización de procesos
                         institucionales universitarios con la aplicación de métodos
@@ -106,15 +100,16 @@
                         software.
                     </p>
                 </div>
-            </div>
-            <div class="mx-auto mt-5 ">
-                <div class="shadow-[-2px_-2px_3px_#fff,2px_2px_3px_#ccc] bg-rose-50/30 h-52 w-52 rounded-full">
-                    <img
-                        src="{base}/img/img1.png"
-                        alt=""
-                        class="rounded-full w-full h-full"
-                    />
+                <div class="mx-auto mt-5 ">
+                    <div class="shadow-[-2px_-2px_3px_#fff,2px_2px_3px_#ccc] bg-rose-50/30 h-52 w-52 rounded-full">
+                        <img
+                            src="{base}/img/img1.png"
+                            alt=""
+                            class="rounded-full w-full h-full"
+                        />
+                    </div>
                 </div>
             </div>
-        </div>
+    </div>
+       
     </div>

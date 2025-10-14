@@ -11,10 +11,9 @@ li{
     @apply  text-sky-700;
 }
 
-.wrapper{
-    @apply w-[1000px]  m-auto ;
-}
-
+.wrapper {
+    @apply max-w-screen-xl md:mx-auto;
+  }
 
 @theme{
     --color-sepia-100: #f5f2f2;
