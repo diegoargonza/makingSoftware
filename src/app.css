@@ -5,11 +5,16 @@ h1{
     @apply text-orange-700 text-3xl;
 }
 h2{
-    @apply  text-blue-800 ;
+    @apply  text-sky-800 ;
 }
-li{
-    @apply  text-sky-700;
+
+input{
+    @apply w-80 border rounded-md p-1 mt-2;
 }
+label{
+    @apply text-sky-800;
+}
+
 
 .wrapper {
     @apply max-w-screen-xl md:mx-auto;
@@ -24,13 +29,13 @@ html {
 }
 
 #acerca{
-    scroll-margin-top: 80px
+    scroll-margin-top: 65px
 }
 #beneficios{
-    scroll-margin-top: 80px
+    scroll-margin-top: 65px
 }
 #informes{
-    scroll-margin-top: 80px
+    scroll-margin-top: 65px
 }
 
 /* Fondos de cada sección */
@@ -47,6 +52,19 @@ html {
     background-repeat: no-repeat, no-repeat;
 
 }
+
+/* #seccion4{
+    background-image: url('/img/bg_secc2_der.png'), url('/img/bg_secc2_izq.png'); 
+    background-position: right, left;
+    background-repeat: no-repeat, no-repeat;
+} */
+#seccion5{
+    background-image: url('/img/bg_secc3_der.png'), url('/img/bg_secc3_izq.png'); 
+    background-position: right, left;
+    background-repeat: no-repeat, no-repeat;
+
+}
+
 
 @media(max-width: 1400px){
 

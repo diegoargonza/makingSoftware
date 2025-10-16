@@ -15,7 +15,7 @@
 
 <!-- Navegación -->
 <Navegacion/>
-<main >
+<main class="bg-sepia-50">
 	{@render children?.()}
 </main>
 	

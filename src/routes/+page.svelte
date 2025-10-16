@@ -117,16 +117,66 @@
 
 
     <!-- Contenido objetivos | sección 4 -->
-    <div class="wrapper">
-        <h1 id="beneficios">Beneficios</h1>
-        <div class="p-50">
+    <div class="flex flex-wrap justify-center mt-20" id="seccion4">
+        <div class="w-full md:w-[1093px]  px-5">
+            <h1 id="beneficios" class="">Beneficios</h1>
+            <p class="mt-3">Con el programa se espera tener una mejor atención y respuesta a la comunidad universitaria, la simplificación de las formas de trabajo, mayor consistencia en los resultados, reducción en los tiempos de respuesta y mejora en la experiencia de la comunidad universitaria, la validación de datos, incorporación de otros mecanismos institucionales como puede ser el firmado de documentos. Algunos beneficios son:</p>
 
+            <h3 class="text-2xl text-sky-800 mt-10">Beneficios institucionales</h3>
+            <ul class="list-disc px-10">
+                <li>Mejora de las soluciones de software existentes en la UNAM.</li>
+                <li>Fortalecimiento de las competencias y especialización técnica de los egresados, para que cuenten con un perfil profesional más sólido y valorado.</li>
+                <li>Apoyo a la automatización y transformación de procesos universitarios.</li>
+                <li>Extensión de prácticas y marcos de trabajo de desarrollo de productos de software con diferentes perfiles técnicos.</li>
+            </ul>
+
+            <h3 class="text-2xl text-sky-800 mt-10">Beneficios de los participantes</h3>
+            <ul class="list-disc px-10">
+                <li>Mejora de las soluciones de software existentes en la UNAM.</li>
+                <li>Fortalecimiento de las competencias y especialización técnica de los egresados, para que cuenten con un perfil profesional más sólido y valorado.</li>
+                <li>Apoyo a la automatización y transformación de procesos universitarios.</li>
+                <li>Extensión de prácticas y marcos de trabajo de desarrollo de productos de software con diferentes perfiles técnicos.</li>
+            </ul>
         </div>
     </div>
-    <!-- Contenido objetivos | sección 4 -->
-    <div class="wrapper ">
-        <h1 id="informes">Informes</h1>
-        <div class="p-50">
-
+    <!-- Contenido objetivos | sección 5 -->
+    <div class="flex flex-wrap justify-center mt-20" id="seccion5">
+        <div class="w-full md:w-[1093px] px-5">
+            <h1 id="informes" class="t">Informes</h1>
+            <p class="mt-3">Déjanos tus datos para participar en el programa.</p>
+            <div class="grid justify-center text-center mt-3 ">
+                <div class="grid grid-cols-1 mt-2">
+                    <label for="">Nombres(s)</label>
+                    <input type="text" value="">
+                </div>
+                <div class="grid grid-cols-1 mt-2">
+                    <label for="">Apellidos</label>
+                    <input type="text" value="">
+                </div>
+                <div class="grid grid-cols-1 mt-2">
+                    <label for="">Correo electrónico</label>
+                    <input type="text" value="">
+                </div>
+                <div class="grid grid-cols-1 mt-2">
+                    <label for="">Teléfono de contacto </label>
+                    <input type="text" value="">
+                </div>
+                <div class="grid grid-cols-1 mt-2">
+                    <label for="">Escriba el texto en la imagen </label>
+                    <input type="text" value="">
+                </div>
+                <div class="grid grid-cols-1 mt-2">
+                    <!-- Imagen captcha -->
+                </div>
+                
+                <div class="grid grid-cols-1 mx-auto mt-2">
+                    <div class="flex justify-center mt-3 md:mt-2">
+                        <div class="grid place-content-center shadow-[-2px_-2px_3px_#fff,2px_2px_3px_#ccc] bg-rose-50/30 h-10 w-40 rounded-xl">
+                            <a href=" " class="text-center text-orange-700" target="_blank">Enviar</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
