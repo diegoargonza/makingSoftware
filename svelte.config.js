@@ -16,7 +16,6 @@ const config = {
 		prerender: {
 			entries: [
 				'/',
-				'/convocatoria',
 			  ],
 			  handleMissingId: 'warn'
 		

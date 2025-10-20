@@ -1,6 +1,7 @@
 <script>
     import { base } from "$app/paths";
     import Tarjeta from "$lib/components/tarjeta.svelte";
+    import Modal from "$lib/components/modal.svelte";
   
     // script para envio de datos 
 
@@ -148,41 +149,14 @@
     </div>
 
     <!-- Contenido objetivos | sección 5 -->
+    
     <div class="flex flex-wrap justify-center mt-20" id="seccion5">
         <div class="w-full md:w-[1093px] px-5">
             <h1 id="informes" class="">Informes</h1>
-            <p class="mt-3">Déjanos tus datos para participar en el programa.</p>
-            <form class="grid justify-center text-center mt-3 " method="post" id="formulario" action="/Applications/MAMP/htdocs/prueba.php">
-                <div class="grid grid-cols-1 mt-2">
-                    <label for="nombres">Nombres(s)</label>
-                    <input type="text" name="nombres" id="nombres" bind:value={nombres}>
-                </div>
-                <div class="grid grid-cols-1 mt-2">
-                    <label for="apellidos">Apellidos</label>
-                    <input type="text" name="apellidos" id="apellidos" bind:value={apellidos}>
-                </div>
-                <div class="grid grid-cols-1 mt-2">
-                    <label for="correo">Correo electrónico</label>
-                    <input type="text" name="correo" id="correo" bind:value={correo}>
-                </div>
-                <div class="grid grid-cols-1 mt-2">
-                    <label for="telefono">Teléfono de contacto </label>
-                    <input type="text" name="telefono" id="telefono" bind:value={telefono}>
-                </div>
-                <div class="grid grid-cols-1 mt-2">
-                    <label for="">Escriba el texto en la imagen </label>
-                    <input type="text" name="texto" id="texto">
-                </div>
-                <div class="grid grid-cols-1 mt-2">
-                    <!-- Imagen captcha -->
-                </div>
-                <div class="flex justify-center mt-3 md:mt-2">
-                    <div class="grid place-content-center shadow-[-2px_-2px_3px_#fff,2px_2px_3px_#ccc] bg-rose-50/30 h-10 w-40 rounded-xl">
-                        <button class="text-center text-orange-700" type="submit">Enviar</button>
-                    </div>
-                </div>
-            </form>
+            <p class="mt-3">¿Quieres participar en el programa? Deja tus datos</p>
+            <div class="mt-5">
+                <Modal/>
+            </div>
         </div>
     </div>
-
- 
+           
