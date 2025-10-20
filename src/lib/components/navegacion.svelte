@@ -52,7 +52,7 @@
      
       <a href="{base}" aria-current="page" class="block rounded-md  px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Inicio</a>
       <a href="#acerca" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600 ">Acerca del programa</a>
-      <a href="{base}/convocatoria" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Convocatoria</a>
+      <a href="https://acortar.link/NkEccB" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Convocatoria</a>
       <a href="#beneficios" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Beneficios</a>
       <a href="#informes" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Informes</a>
     </div>

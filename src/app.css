@@ -9,7 +9,7 @@ h2{
 }
 
 input{
-    @apply w-80 border rounded-md p-1 mt-2;
+    @apply w-full md:w-80 border rounded-md p-1 mt-2;
 }
 label{
     @apply text-sky-800;
