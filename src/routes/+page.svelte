@@ -150,10 +150,9 @@
 
     <!-- Contenido objetivos | sección 5 -->
     
-    <div class="flex flex-wrap justify-center mt-20" id="seccion5">
+    <div class="flex flex-wrap justify-center mt-20" >
         <div class="w-full md:w-[1100px] px-5 p-5">
             <h1 id="informes" class="">Informes</h1>
-            <p class="mt-3">¿Quieres participar en el programa? Deja tus datos</p>
             <div class="mt-5">
                 <Modal/>
             </div>

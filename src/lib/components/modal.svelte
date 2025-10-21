@@ -1,7 +1,11 @@
+<script>
+  import { base } from "$app/paths";
+</script>
+
 <button
   command="show-modal"
   commandfor="dialog"
-  class="bg-sky-800 hover:bg-sky-700 text-white p-2 rounded-md cursor-pointer">información</button
+  class="bg-sky-800 hover:sky-700 text-white p-2 rounded-md cursor-pointer">información</button
 >
 
 <el-dialog>
@@ -13,15 +17,15 @@
     <el-dialog-backdrop class="fixed inset-0 bg-gray-500/75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
     ></el-dialog-backdrop>
 
-    <div class="flex  items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 mt-20">
-      <el-dialog-panel class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8  sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95 ">
+    <div class="flex  items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 mt-10 ">
+      <el-dialog-panel class="relative transform overflow-hidden rounded-lg bg-white w-[500px] ">
         <div class="bg-white px-20 pt-5 pb-4 sm:p-4 sm:pb-4 ">
           <div class="">
-            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-              <div class="flex items-center justify-between gap-5 ">
+            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left ">
+              <div class="flex items-center justify-between mx-auto">
                 <h3
                   id="dialog-title"
-                  class="font-semibold text-sky-800 text-2xl"
+                  class="font-semibold text-orange-700 text-2xl"
                 >
                   Información
                 </h3>
@@ -30,34 +34,38 @@
                 commandfor="dialog"
                 command="close">X</button>
               </div>
-              <!-- <div class="mt-2">
-                <p class="text-sm ">Déjanos tus datos para participar en el programa.</p>
-              </div> -->
+              <div class="mt-2">
+                <p class="text-sm text-center">Déjanos tus datos para participar en el programa.</p>
+              </div> 
               <div class="mt-3">
                 <form
-                  class="grid justify-center text-center mt-3"
+                  class="grid justify-center text-center mx-auto  mt-3"
                   method="post"
                   action="/prueba.php"
                 >
                   <div class="grid grid-cols-1 mt-2">
                     <label for="nombres">Nombres(s)</label>
-                    <input type="text" name="nombres" id="nombres" />
+                    <input type="text" name="nombres" id="nombres" class="w-auto md:w-70 border  rounded-md p-1" />
                   </div>
                   <div class="grid grid-cols-1 mt-2">
                     <label for="apellidos">Apellidos</label>
-                    <input type="text" name="apellidos" id="apellidos" />
+                    <input type="text" name="apellidos" id="apellidos" class="w-auto md:w-70 border  rounded-md p-1"/>
                   </div>
                   <div class="grid grid-cols-1 mt-2">
                     <label for="correo">Correo electrónico</label>
-                    <input type="text" name="correo" id="correo" />
+                    <input type="text" name="correo" id="correo" class="w-auto md:w-70 border  rounded-md p-1" />
                   </div>
                   <div class="grid grid-cols-1 mt-2">
                     <label for="telefono">Teléfono de contacto </label>
-                    <input type="text" name="telefono" id="telefono" />
+                    <input type="text" name="telefono" id="telefono" class="w-auto md:w-70 border  rounded-md p-1"/>
+                  </div>
+                  <div class="flex justify-center mt-2">
+                    <!-- svelte-ignore a11y_missing_attribute -->
+                    <img src="{base}/img/img_captcha.png" class="w-60 h-30">
                   </div>
                   <div class="grid grid-cols-1 mt-2">
                     <label for="">Escriba el texto en la imagen </label>
-                    <input type="text" name="texto" id="texto" />
+                    <input type="text" name="texto" id="texto" class="w-auto md:w-70 border  rounded-md p-1"/>
                   </div>
                   <div class="grid grid-cols-1 mt-2"></div>
                   <div class=" flex flex-wrap space-x-5 justify-center p-2">

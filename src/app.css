@@ -8,9 +8,6 @@ h2{
     @apply  text-sky-800 ;
 }
 
-input{
-    @apply w-full sm:w-80 md:w-90 lg:w-100 border rounded-md p-1 mt-2;
-}
 label{
     @apply text-sky-800;
 }
