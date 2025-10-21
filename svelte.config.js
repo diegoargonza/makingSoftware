@@ -12,10 +12,12 @@ const config = {
 		}),
 		paths:{
 			base: '/MAKING25',
+
 		},
 		prerender: {
 			entries: [
 				'/',
+				'/creditos',
 			  ],
 			  handleMissingId: 'warn'
 		

@@ -1,7 +1,7 @@
 <button
   command="show-modal"
   commandfor="dialog"
-  class="border p-2 rounded-md cursor-pointer">información</button
+  class="bg-sky-800 hover:bg-sky-700 text-white p-2 rounded-md cursor-pointer">información</button
 >
 
 <el-dialog>
@@ -13,12 +13,12 @@
     <el-dialog-backdrop class="fixed inset-0 bg-gray-500/75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
     ></el-dialog-backdrop>
 
-    <div class="flex  items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0">
-      <el-dialog-panel class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8  sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
-        <div class="bg-white px-20 pt-5 pb-4 sm:p-4 sm:pb-4">
+    <div class="flex  items-end justify-center p-4 text-center focus:outline-none sm:items-center sm:p-0 mt-20">
+      <el-dialog-panel class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8  sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95 ">
+        <div class="bg-white px-20 pt-5 pb-4 sm:p-4 sm:pb-4 ">
           <div class="">
             <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-              <div class="flex items-center justify-between gap-5">
+              <div class="flex items-center justify-between gap-5 ">
                 <h3
                   id="dialog-title"
                   class="font-semibold text-sky-800 text-2xl"
@@ -26,7 +26,7 @@
                   Información
                 </h3>
                 <button 
-                class="w-10 text-xl border-1 rounded-md cursor-pointer  p-2"
+                class="w-10 text-xl  text-sky-900 hover:bg-sepia-100 rounded-md cursor-pointer  p-2"
                 commandfor="dialog"
                 command="close">X</button>
               </div>
@@ -37,7 +37,7 @@
                 <form
                   class="grid justify-center text-center mt-3"
                   method="post"
-                  action="http://localhost/makingSoftware/making-software/static/prueba.php"
+                  action="/prueba.php"
                 >
                   <div class="grid grid-cols-1 mt-2">
                     <label for="nombres">Nombres(s)</label>
