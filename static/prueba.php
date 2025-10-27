@@ -1,22 +1,24 @@
 <?php
-if(isset($_POST["aceptar"])){
-    $nombres=$_POST["nombres"];
-    $apellidos=$_POST["apellidos"];
-    $correo=$_POST["correo"];
-    $telefono=$_POST["telefono"];
-    $texto=$_POST["texto"];
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $nombres = $_POST["nombres"] ?? '';
+    $apellidos = $_POST["apellidos"] ?? '';
+    $correo = $_POST["correo"] ?? '';
+    $telefono = $_POST["telefono"] ?? '';
+    $texto = $_POST["texto"] ?? '';
 
     $destinatario="correopru3b42@gmail.com";
-    $asunto="Nuevo-mensaje-MakingSoftware $correo";
+    $asunto="Nuevo-mensaje-MakingSoftware ($correo)";
 
     $contenido="Nombre: $nombres \n";
-    $contenido.="Correo: $correo\r\n";
-    $contenido.="Teléfono: $telefono\r\n\r\n";
-    $contenido.="verificación:\r\n$texto\r\n";
+    $contenido.="Correo: $correo\n";
+    $contenido.="Teléfono: $telefono\n";
+    $contenido.="verificación: $texto\n";
 
-    $header="From: correopru3b42@soft.com";
+    $headers="From: correopru3b42@soft.com";
+    $headers .= "Reply-To: $correo\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-    $mail=mail($destinatario,$asunto,$contenido,$header);
+    $mail=mail($destinatario,$asunto,$contenido,$headers);
 
     if($mail){
         echo 'Mensaje enviado con exito';
