@@ -75,7 +75,7 @@
                           class="text-center text-orange-700 cursor-pointer"
                           type="submit"
                           command="close"
-                          commandfor="dialog">Aceptar</button
+                          commandfor="dialog"  value="aceptar" name="aceptar">Aceptar</button
                         >
                       </div>
                     </div>
