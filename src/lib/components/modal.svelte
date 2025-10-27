@@ -41,7 +41,7 @@
                 <form
                   class="grid justify-center text-center mx-auto  mt-3"
                   method="post"
-                  action="/prueba.php"
+                  action="{base}/prueba.php"
                 >
                   <div class="grid grid-cols-1 mt-2">
                     <label for="nombres">Nombres(s)</label>
