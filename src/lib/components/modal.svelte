@@ -1,11 +1,34 @@
 <script>
   import { base } from "$app/paths";
+  
+   // @ts-ignore
+   function enviarFormulario(event) {
+    event.preventDefault(); // evita el redireccionamiento
+
+    const form = event.target;
+    const data = new FormData(form);
+    const text = document.querySelector('#mensaje');
+
+    try {
+      const response =  fetch("http://132.248.63.171/MAKING25/prueba.php", {
+        method: "POST",
+        body: data
+      });
+
+      console.log('Mensaje enviado con exito');
+    } catch (error) {
+      console.log('Mensaje no enviado con exito');
+      
+    }
+  }
+
+
 </script>
 
 <button
   command="show-modal"
   commandfor="dialog"
-  class="bg-sky-800 hover:sky-700 text-white p-2 rounded-md cursor-pointer">información</button
+  class="bg-sky-800 hover:bg-sky-700 text-white p-2 rounded-md cursor-pointer">información</button
 >
 
 <el-dialog>
@@ -41,7 +64,7 @@
                 <form
                   class="grid justify-center text-center mx-auto  mt-3"
                   method="post"
-                  action="http://132.248.63.171/MAKING25/prueba.php"
+                  on:submit|preventDefault={enviarFormulario}
                 >
                   <div class="grid grid-cols-1 mt-2">
                     <label for="nombres">Nombres(s)</label>
@@ -89,5 +112,4 @@
     </div>
   </dialog>
 </el-dialog>
-<!-- svelte-ignore a11y_missing_attribute -->
-<!-- <iframe src="http://132.248.63.171/MAKING25/prueba.php" width="600" height="600" frameborder='0' allowfullscreen></iframe> -->
+<p id="mensaje"></p>

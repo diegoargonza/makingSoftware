@@ -3,12 +3,7 @@
     import Tarjeta from "$lib/components/tarjeta.svelte";
     import Modal from "$lib/components/modal.svelte";
   
-    // script para envio de datos 
 
-    let nombres= '';
-    let apellidos= '';
-    let correo = '';
-    let telefono= '';
 </script>
 
 
