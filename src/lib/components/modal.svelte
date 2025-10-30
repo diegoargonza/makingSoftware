@@ -41,7 +41,7 @@
                 <form
                   class="grid justify-center text-center mx-auto  mt-3"
                   method="post"
-                  action="{base}/prueba.php"
+                  action="http://132.248.63.171/MAKING25/prueba.php"
                 >
                   <div class="grid grid-cols-1 mt-2">
                     <label for="nombres">Nombres(s)</label>
@@ -74,8 +74,8 @@
                         <button
                           class="text-center text-orange-700 cursor-pointer"
                           type="submit"
-                          command="close"
-                          commandfor="dialog"  value="aceptar" name="aceptar">Aceptar</button
+                          value="aceptar" 
+                          name="aceptar">Aceptar</button
                         >
                       </div>
                     </div>
@@ -89,4 +89,5 @@
     </div>
   </dialog>
 </el-dialog>
-<!-- <iframe src="" width="600" height="600" frameborder='0' allowfullscreen></iframe> -->
+<!-- svelte-ignore a11y_missing_attribute -->
+<!-- <iframe src="http://132.248.63.171/MAKING25/prueba.php" width="600" height="600" frameborder='0' allowfullscreen></iframe> -->

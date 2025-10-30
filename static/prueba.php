@@ -1,4 +1,12 @@
 <?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nombres = $_POST["nombres"] ?? '';
     $apellidos = $_POST["apellidos"] ?? '';
@@ -6,92 +14,37 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $telefono = $_POST["telefono"] ?? '';
     $texto = $_POST["texto"] ?? '';
 
-    $destinatario="correopru3b42@gmail.com";
-    $asunto="Nuevo-mensaje-MakingSoftware ($correo)";
+    $mail = new PHPMailer(true);
 
-    $contenido="Nombre: $nombres \n";
-    $contenido.="Correo: $correo\n";
-    $contenido.="Teléfono: $telefono\n";
-    $contenido.="verificación: $texto\n";
+    try {
+        //Coanfigurción del servidor SMTP de Gmail
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'correopru3b42@gmail.com'; // tu correo Gmail
+        $mail->Password = 'sfhz wanm ykio zxpn'; // contraseña de aplicación
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
 
-    $headers="From: correopru3b42@soft.com";
-    $headers .= "Reply-To: $correo\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+        //Remitente y destinatario
+        $mail->setFrom('correopru3b42@gmail.com', 'Formulario MakingSoftware');
+        $mail->addAddress('correopru3b42@gmail.com'); // tu correo de destino
 
-    $mail=mail($destinatario,$asunto,$contenido,$headers);
+        //Contenido
+        $mail->isHTML(true);
+        $mail->Subject = "Nuevo mensaje de $nombres";
+        $mail->Body = "
+            <b>Nombre:</b> $nombres $apellidos<br>
+            <b>Correo:</b> $correo<br>
+            <b>Teléfono:</b> $telefono<br>
+            <b>Verificación:</b> $texto
+        ";
 
-    if($mail){
-        echo 'Mensaje enviado con exito';
-    }else{
-        echo 'El mensaje no se envio correctamente';
+        $mail->send();
+        echo 'Mensaje enviado con éxito';
+    } catch (Exception $e) {
+        echo "Error al enviar el correo: {$mail->ErrorInfo}";
     }
 }
-
-
-
-// if($_SERVER["REQUEST_METHOD"] == "POST"){
-//     $nombres = $_POST['nombres'] ?? '';
-//     $apellidos = $_POST['apellidos'] ?? '';
-//     $correo  = $_POST['correo'] ?? '';
-//     $telefono = $_POST['telefono'] ?? '';
-//     $texto = $_POST['texto'] ?? '';
-
-//     $para = "diegoargonza8@gmail.com";
-//     $asunto = "Prueba de formulario svelte con php";
-    
-//     $mensaje = "
-//         Nombre: $nombres $apellidos
-//         Correo: $correo
-//         Telefono: $telefono
-//         Texto: $texto 
-//     ";
-
-//     mail(
-//     $destinatario = "diegoargonza8@gmail.com", 
-//     $asunto = "información makingSoftware",  
-//     $cuerpo = $mensaje );
-
-//     $headers = "From: $correo\r\n" .
-//                "Reply-To: $correo\r\n" .
-//                "X-Mailer: PHP/" . phpversion();
-
-
-
-//     if (mail($para, $asunto, $mensaje, $headers)) {
-//         echo "Mensaje enviado correctamente.";
-//     } else {
-//        echo "El formulario se ha enviado correctamente (modo local).";
-//        echo nl2br($mensaje);
-//     }
-// }
-
-
-
-// if($_SERVER["REQUEST_METHOD"] == "POST"){
-//     $nombres = $_POST['nombres'] ?? '';
-//     $apellidos = $_POST['apellidos'] ?? '';
-//     $correo  = $_POST['correo'] ?? '';
-//     $telefono = $_POST['telefono'] ?? '';
-//     $texto = $_POST['texto'] ?? '';
-
-
-//     mail(
-//     $destinatario = "diegoargonza8@gmail.com", 
-//     $asunto = "información makingSoftware",  
-//     $cuerpo = $mensaje );
-
-//     $mensaje = "
-//         Nombre: $nombres $apellidos
-//         Correo: $correo
-//         Telefono: $telefono
-//         Texto: $texto 
-//     ";
-
-//     $headers = "From: $correo\r\n" .
-//                "Reply-To: $correo\r\n" .
-//                "X-Mailer: PHP/" . phpversion();; 
-// }
-
-
 
 ?>
