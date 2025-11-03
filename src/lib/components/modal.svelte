@@ -1,26 +1,40 @@
 <script>
   import { base } from "$app/paths";
+  import { onMount } from 'svelte';
+
+  let mensaje = " ";
+  let exito = false;
   
    // @ts-ignore
-   function enviarFormulario(event) {
+   async function enviarFormulario(event) {
     event.preventDefault(); // evita el redireccionamiento
 
     const form = event.target;
     const data = new FormData(form);
-    const text = document.querySelector('#mensaje');
+
 
     try {
-      const response =  fetch("http://132.248.63.171/MAKING25/prueba.php", {
+      const response = await fetch("http://132.248.63.171/MAKING25/prueba.php", {
         method: "POST",
         body: data
       });
-
-      console.log('Mensaje enviado con exito');
+      const resultado = await response.json();
+      if(resultado.succes){
+        mensaje = "Se ha enviado el formulario correctamente.";
+      }else{
+        mensaje = "No se pudo enviar el mensaje.";
+        exito = false
+      }
     } catch (error) {
-      console.log('Mensaje no enviado con exito');
+      mensaje = "Error al conectar con el servidor";
+      exito = false;
       
     }
+
+   
+    
   }
+  
 
 
 </script>
@@ -28,7 +42,7 @@
 <button
   command="show-modal"
   commandfor="dialog"
-  class="cursor-pointer block rounded-md  text-base font-medium text-sky-700 hover:text-sky-600">Información</button>
+  class="cursor-pointer block rounded-md  text-sm md:text-base  text-sky-700 hover:text-sky-600">Información</button>
 
 <el-dialog>
   <dialog
@@ -43,6 +57,19 @@
       <el-dialog-panel class="relative transform overflow-hidden rounded-lg bg-white w-[500px] ">
         <div class="bg-white px-20 pt-5 pb-4 sm:p-4 sm:pb-4 ">
           <div class="">
+            <!-- Mensaje de envio con éxito -->
+                <!-- <div class="bg-green-100 rounded-md text-center  hidden" id="mensaje">
+                  <p  class=" p-2  z-100 ">Información eníado con éxito</p>
+                </div> -->
+
+                {#if mensaje}
+                  <div  class=" rounded-md text-center" id="mensaje">
+                    <p class="p-2">{mensaje}</p>
+                  </div>
+                 
+                {/if}
+
+
             <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left ">
               <div class="flex items-center justify-between mx-auto">
                 <h3
@@ -63,7 +90,7 @@
                 <form
                   class="grid justify-center text-center mx-auto  mt-3"
                   method="post"
-                  on:submit|preventDefault={enviarFormulario}
+                  on:submit={enviarFormulario}
                 >
                   <div class="grid grid-cols-1 mt-2">
                     <label for="nombres">Nombres(s)</label>
@@ -97,7 +124,8 @@
                           class="text-center text-orange-700 cursor-pointer"
                           type="submit"
                           value="aceptar" 
-                          name="aceptar">Aceptar</button
+                          name="aceptar"
+                          id="aceptar">Aceptar</button
                         >
                       </div>
                     </div>
@@ -111,4 +139,3 @@
     </div>
   </dialog>
 </el-dialog>
-<p id="mensaje"></p>
