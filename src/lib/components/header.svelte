@@ -12,8 +12,7 @@
         <div class="flex space-x-10 items-center ">
             <img src={UNAM} alt="logo-unam" class="h-50 w-50 hidden sm:inline text-left text-sm lg:text-xl ">
             <div class="w-[200px] md:w-full hidden sm:block">
-                <p class="text-orange-700">Programa institucional de</p>
-                <p class="text-orange-700">Desarrollo de Software y Soluciones Tecnológicas</p>
+                <p class="text-orange-700">Programa institucional deDesarrollo de Software y Soluciones Tecnológicas</p>
             </div>
         </div>
         <div class=" fixed top-0 right-0 py-2  sm:relative sm:top-0 sm:left-0 md:relative md:top-0 md:left-0  z-80  ">

@@ -28,8 +28,7 @@
 <button
   command="show-modal"
   commandfor="dialog"
-  class="bg-sky-800 hover:bg-sky-700 text-white p-2 rounded-md cursor-pointer">información</button
->
+  class="cursor-pointer block rounded-md  text-base font-medium text-sky-700 hover:text-sky-600">Información</button>
 
 <el-dialog>
   <dialog

@@ -143,7 +143,7 @@
         </div>
     </div>
 
-    <!-- Contenido objetivos | sección 5 -->
+    <!-- Contenido objetivos | sección 5 
     
     <div class="flex flex-wrap justify-center mt-20" >
         <div class="w-full md:w-[1100px] px-5 p-5">
@@ -153,4 +153,4 @@
             </div>
         </div>
     </div>
-           
+           -->

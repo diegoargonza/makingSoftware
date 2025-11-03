@@ -1,20 +1,7 @@
 <script>
     import {base} from '$app/paths';
+    import Modal from "$lib/components/modal.svelte";
 </script>
-
-<!-- <div class="bg-sepia-100   sticky top-0 z-50">
-    <nav class="bg-gradient-to-r from-transparent  via-white to-transparent via-50% to-90% w-full  p-3">
-        <ul class="flex space-x-10 justify-center">
-            <li><a href="{base}" >Inicio</a></li>
-            <li><a href="#acerca" >Acerca del programa</a></li>
-            <li><a href="{base}/convocatoria" >Convocatoria</a></li>
-            <li><a href="#beneficios" >Beneficios</a></li>
-            <li><a href="#informes" >Informes</a></li>
-        </ul>
-    </nav>
-</div> -->
-
-
 
 <nav class="  sticky top-0 z-50 bg-sepia-100">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8  bg-gradient-to-r from-transparent  via-white to-transparent via-50% to-90%">
@@ -39,7 +26,7 @@
             <a href="#acerca" class="text-sky-700">Acerca del programa</a>
             <a href="https://acortar.link/NkEccB" class="text-sky-700" target="_blank">Convocatoria</a>
             <a href="#beneficios" class="text-sky-700">Beneficios</a>
-            <a href="#informes" class="text-sky-700">Informes</a>
+            <Modal/>
           </div>
         </div>
       </div>
@@ -49,12 +36,12 @@
 
   <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
     <div class="space-y-1 px-2 pt-2 pb-3">
-     
       <a href="{base}" aria-current="page" class="block rounded-md  px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Inicio</a>
       <a href="#acerca" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600 ">Acerca del programa</a>
       <a href="https://acortar.link/NkEccB" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Convocatoria</a>
-      <a href="#beneficios" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Beneficios</a>
-      <a href="#informes" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Informes</a>
+      <span  class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600"><Modal/></span>
     </div>
   </el-disclosure>
 </nav>
+
+
