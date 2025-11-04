@@ -26,8 +26,9 @@
           body: data,
         },
       );
-      const resultado = await response.json();
-      if (resultado.succes) {
+
+      
+      if (response) {
         mensaje = "Se ha enviado el formulario correctamente.";
         exito = true;
       } else {
@@ -35,7 +36,7 @@
         exito = false;
       }
     } catch (error) {
-      mensaje = "Error al conectar con el servidor";
+      mensaje = "Error al conectar con el servidor", error;
       exito = false;
     }
   }
@@ -50,7 +51,6 @@
 
 <!-- Modal super simple -->
 {#if modalAbierto}
-
   <div class="fixed inset-0 bg-gray-500/75  flex items-center justify-center p-4 w-full z-50">
     <div class="flex justify-center bg-white rounded-lg w-full max-w-md  overflow-y-auto z-80">
       <div class="p-6">

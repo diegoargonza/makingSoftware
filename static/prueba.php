@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         //Contenido
         $mail->isHTML(true);
-        $mail->Subject = "Solicitud de información MakingSoftware $nombres";
+        $mail->Subject = "Solicitud MakingSoftware $nombres";
         $mail->Body = "
             <b>Nombre:</b> $nombres $apellidos<br>
             <b>Correo:</b> $correo<br>
