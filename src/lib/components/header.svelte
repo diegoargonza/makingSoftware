@@ -14,11 +14,11 @@
         <div class="flex space-x-10 items-center ">
             <img src={UNAM} alt="logo-unam" class="h-50 w-50 hidden sm:inline text-left text-sm lg:text-xl ">
             <div class="w-[200px] md:w-full hidden sm:block">
-                <p class="text-orange-700">Programa institucional deDesarrollo de Software y Soluciones Tecnológicas</p>
+                <p class="text-orange-700">Programa Institucional de Desarrollo de Software y Soluciones Tecnológicas</p>
             </div>
         </div>
-        <div class=" fixed top-0 right-0 py-2  sm:relative sm:top-0 sm:left-0 md:relative md:top-0 md:left-0 z-80 ">
-            <img src={MS_logo} alt="logo-msoftware" class="h-10 w-50 sm:h-40 sm:w-40 md:h-40 md:w-40 inset-0 ">
+        <div class=" fixed top-0 right-0 py-2  sm:relative sm:top-0 sm:left-0 md:relative md:top-0 md:left-0 z-1 ">
+            <img src={MS_logo} alt="logo-msoftware" class="h-10 w-50 sm:h-40 hidden md:block sm:w-40 md:h-40 md:w-40 inset-0 ">
         </div>
    </div>
 </header>

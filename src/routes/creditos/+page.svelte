@@ -45,6 +45,7 @@
         </div>
         <div>
             <p>L.C.G. Edgar Vargas Zermeño</p>
+            <p>Lic. Diego Daniel Argonza Roblero</p>
             <p class="font-bold">{cargos.sitioWeb.DSW}</p>
         </div>
     </div>
