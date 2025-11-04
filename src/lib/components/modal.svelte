@@ -42,7 +42,7 @@
 <button
   command="show-modal"
   commandfor="dialog"
-  class="cursor-pointer block rounded-md  text-sm md:text-base  text-sky-700 hover:text-sky-600">Información</button>
+  class="cursor-pointer block rounded-md  sm:text-sm md:text-base  text-sky-700 hover:text-sky-600">Información</button>
 
 <el-dialog>
   <dialog
@@ -57,14 +57,11 @@
       <el-dialog-panel class="relative transform overflow-hidden rounded-lg bg-white w-[500px] ">
         <div class="bg-white px-20 pt-5 pb-4 sm:p-4 sm:pb-4 ">
           <div class="">
-            <!-- Mensaje de envio con éxito -->
-                <!-- <div class="bg-green-100 rounded-md text-center  hidden" id="mensaje">
-                  <p  class=" p-2  z-100 ">Información eníado con éxito</p>
-                </div> -->
+
 
                 {#if mensaje}
-                  <div  class=" rounded-md text-center" id="mensaje">
-                    <p class="p-2">{mensaje}</p>
+                  <div  class=" rounded-md text-center " id="mensaje">
+                    <p class="p-2 font-bold">{mensaje}</p>
                   </div>
                  
                 {/if}

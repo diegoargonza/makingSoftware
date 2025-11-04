@@ -1,6 +1,7 @@
 <script>
     import {base} from '$app/paths';
     import Modal from "$lib/components/modal.svelte";
+
 </script>
 
 <nav class="  sticky top-0 z-50 bg-sepia-100">
@@ -38,7 +39,7 @@
     <div class="space-y-1 px-2 pt-2 pb-3 ">
       <a href="{base}" aria-current="page" class="block rounded-md  px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Inicio</a>
       <a href="#acerca" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600 ">Acerca del programa</a>
-      <a href="/convocatoria.pdf" target="_blank" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Convocatoria</a>
+      <a href="{base}/convocatoria2026.pdf" target="_blank" class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600">Convocatoria</a>
       <span  class="block rounded-md px-3 py-2 text-base font-medium text-sky-700 hover:text-sky-600"><Modal/></span>
     </div>
   </el-disclosure>

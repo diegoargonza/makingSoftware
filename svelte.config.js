@@ -18,6 +18,7 @@ const config = {
 			entries: [
 				'/',
 				'/creditos',	
+				
 			  ],
 			  handleMissingId: 'warn'
 		
