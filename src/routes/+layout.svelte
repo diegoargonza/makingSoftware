@@ -5,8 +5,8 @@
 	import Header from '$lib/components/header.svelte';
 	import Footer from '$lib/components/footer.svelte';
 	let { children } = $props();
-</script>
 
+</script>
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
@@ -16,7 +16,7 @@
 
 <!-- Navegación -->
 <Navegacion/>
-<main class="bg-sepia-50 min-h-screen">
+<main class="bg-sepia-50 min-h-screen ">
 	{@render children?.()}
 </main>
 <Footer/>
